@@ -1,0 +1,7 @@
+<div class="container">
+  <mat-toolbar *ngIf="successMsg" color="accent">{{ successMsg }}</mat-toolbar>
+  <mat-toolbar *ngIf="errorMsg" color="warn">{{ errorMsg }}</mat-toolbar>
+  <span class="mb-5">Valider votre rdv</span>
+  <br /><br /><br /><br /><br /><br /><br />
+  <ng-payment-card (formSaved)="processPayment(cc)"> </ng-payment-card>
+</div>
